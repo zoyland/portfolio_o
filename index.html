@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     
+    <link rel="apple-touch-icon" sizes="57x57" href="image/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="image/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="image/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="image/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -32,9 +50,14 @@
                 <p>hey there! I’m a <span>personal Portfolio</span> page belong to Gibbeum, <br>
                     please keep in mind i could be <span>Best In Chrome or in Safari Web broswer!</span></p>
                 <div class="area">
-                    <h1>DESIGNER and <br>
+                    <div class="typing">
+                        <p>&#60;<span>strong</span>&#62;</p>
+                    </div>
+                    <input type="hidden" id="typing-txt" value="타이핑을 원하는 문장 입력하세요.">
+                    <h1 id="typing">DESIGNER and <br>
                         also PUBLISHER
                     </h1>
+                    
                 </div>
             </div>
         </div>
@@ -53,16 +76,28 @@
                 <div class="area"></div>
             </div>
         </div>
-        <div class="box direct" style="background-color:blue;">
+        <div class="box direct" style="background-color:#1e1e1e;">
             <div class="cover">
                 <div class="area">
                     <div class="direct_box">
                         <p>Please feel free to contact me<span>!</span></p>
-                        <ul>
-                            <li><img src="image/direct/phone.png" alt="phone"></li>
-                            <li><img src="image/direct/mail.png" alt="mail"></li>
-                            <li><img src="image/direct/dm.png" alt="dm"></li>
-                        </ul>
+                        <div class="direct_wrapper">
+                            <div class="direct_1">
+                                <div class="direct_img"></div>
+                                <h5>PHONE</h5>
+                                <p>+82)10-7348-0714</p>
+                            </div>
+                            <div class="direct_2">
+                                <div class="direct_img"></div>
+                                <h5>EMAIL</h5>
+                                <p>zoyfulland@gmail.com</p>
+                            </div>
+                            <div class="direct_3">
+                                <div class="direct_img"></div>
+                                <h5>INSTAGRAM</h5>
+                                <p>@greetings_from_zoyland</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

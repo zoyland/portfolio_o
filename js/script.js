@@ -41,7 +41,9 @@ window.onload = function () {
     });
 }
 
+
 // $(function(){
-//        $("html, body").animate({ scrollLeft: 0 }, "slow"); 
+//         $("html, body").animate({ scrollLeft: 0 }, "slow"); 
 //   });
+
 // 스크롤 시 초기 화면으로 이동. 코드 다 하고 꺼야 됨 반드시!!

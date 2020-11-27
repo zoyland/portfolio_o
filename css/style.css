@@ -103,7 +103,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 90%;
     position: absolute;
-    background-color: #000;
+    background-color: #1e1e1e;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -128,9 +128,30 @@ body::-webkit-scrollbar {
     font-size: 6.5rem;
     color: #ddd;
     font-weight: 700;
+    margin-top: 1rem;
 }
-
+.base .area .typing p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ddd;
+}
+.base .area .typing span {
+    color: #3f9cd6;
+}
+.direct .area {
+    position: relative;
+}
+.direct .area .direct_box {
+    width: 45rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .direct .area .direct_box p {
+    width: 45rem;
+    height: auto;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -138,3 +159,46 @@ body::-webkit-scrollbar {
 .direct .area .direct_box p span {
     font-style: italic;
 }
+.direct .area .direct_box .direct_wrapper {
+    width: 100%; 
+    height: auto; 
+    display: flex;
+}
+.direct .area .direct_box .direct_wrapper > div {
+    width: 15rem;
+    position: relative;
+}
+.direct .area .direct_box .direct_wrapper > div h5 {
+    width: inherit;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-top: 10rem;
+}
+.direct .area .direct_box .direct_wrapper > div p {
+    width: inherit;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.direct .area .direct_box .direct_wrapper > div > .direct_img {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 5rem;
+}
+.direct .area .direct_box .direct_wrapper > div > .direct_img:hover {
+    cursor: url(../image/contact.png), auto;
+}
+.direct .area .direct_box .direct_wrapper .direct_1 .direct_img {
+    background-image: url(../image/direct/phone.svg);
+}
+.direct .area .direct_box .direct_wrapper .direct_2 .direct_img {
+    background-image: url(../image/direct/mail.svg);
+}
+.direct .area .direct_box .direct_wrapper .direct_3 .direct_img {
+    background-image: url(../image/direct/dm.svg);
+}
+/* Direct Area */
