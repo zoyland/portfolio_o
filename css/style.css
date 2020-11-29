@@ -79,7 +79,7 @@ body {
 .left:hover {
     width: 15%;
 }
-.left .tap {
+.left .tab {
     width: 10rem;
     height: auto; 
     border: 1px solid black;
