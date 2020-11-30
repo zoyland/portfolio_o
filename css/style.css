@@ -249,7 +249,7 @@ body {
     cursor: url(../image/okay.png), auto;
 }
 #base .area {
-    width: 100%;
+    width: 90%;
     position: relative;
 }
 #base .area .base_hover {
