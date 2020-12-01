@@ -252,15 +252,38 @@ body {
     width: 90%;
     position: relative;
 }
+#base .area .base_wrap {
+    height: auto;
+    width: 90%;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#base .area .base_wrap p:nth-child(1) {
+    position: relative;
+    text-align: left;
+}
+#base .area .base_wrap .p2 {
+    position: relative;
+    text-align: right;
+}
 #base .area .base_hover {
     text-align: center;
     font-size: 6.5rem;
     color: #ddd;
     font-weight: 700;
-    margin-top: 1rem;
+    margin: 1rem 0;
+    position: relative;
 }
 #base .area .base_hover2 {
     display: none;
+    text-align: center;
+    font-size: 6.5rem;
+    color: #ddd;
+    font-weight: 700;
+    margin: 1rem 0;
+    position: relative;
 }
 #base .area .base_hover2 h1 {
     text-align: center;
@@ -274,12 +297,9 @@ body {
     font-weight: bold;
     color: #ddd;
 }
-#base .area .base_wrap {
-    width: 100%;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+#base .area .base_wrap:hover {
+    cursor: default;
 }
 /* Base Area */
 
@@ -373,8 +393,8 @@ body {
     font-weight: bold;
 }
 #other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 #other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img:nth-child(2) {
     width: 2.5rem;
