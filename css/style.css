@@ -330,11 +330,18 @@ body {
     width: 17rem;
     height: 17rem;
     border-radius: 50%;
-    background-color: #ddd;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#other1 .area .other_wrap .other_wrap1 .profic > div > .pic{
+    background-image: url(../image/profic.png);
+    /* background-image: url(../image/profic2.png); */
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
 }
 #other1 .area .other_wrap .other_wrap1 .info {
     width: 60%;
@@ -348,13 +355,16 @@ body {
     text-align: left;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    transform: translateY(-50%);
 }
-#other1 .area .other_wrap .other_wrap1 .info ul li {}
+#other1 .area .other_wrap .other_wrap1 .info ul li {
+    display: flex;
+    margin: 1rem 0;
+}
 #other1 .area .other_wrap .other_wrap1 .info ul li img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 #other1 .area .other_wrap .other_wrap1 .info ul li p {
     display: inline-block;
@@ -365,6 +375,9 @@ body {
 }
 #other1 .area .other_wrap .other_wrap1 .info ul li p:hover {
     cursor: pointer;
+}
+#other1 .area .other_wrap .other_wrap1 .info ul li p span {
+    font-family: 'GmarketSansLight';
 }
 
 #other1 .area .other_wrap .other_wrap2 {
@@ -388,6 +401,11 @@ body {
     font-style: italic;
     font-size: 1.5rem;
     font-weight: bold;
+}
+#other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .quote {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 1rem;
 }
 #other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img {
     width: 3rem;
@@ -432,7 +450,7 @@ body {
 }
 #other1 .area .other_wrap .other_wrap2 .keyword ul > li > p:hover {
     cursor: pointer;
-    background-color: rgba(63, 156, 214, .5);
+    background-color: rgba(63, 156, 214, .7);
     transition: .5s;
 }
 
@@ -453,21 +471,36 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 #other2 .area .other2_wrap .certi {
     width: 35%;
     height: 80%; 
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
 }
+#other2 .area .other2_wrap .certi .certi_wrap {
+    font-family: 'GmarketSansLight';
+    font-weight: normal;
+    /* border: 1px solid blue; */
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#other2 .area .other2_wrap .certi .certi_wrap p {
+    display: block;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
 #other2 .area .other2_wrap .abil {
     width: 55%;
     height: 80%; 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     top: 50%;
     right: 5%;
@@ -476,7 +509,7 @@ body {
 #other2 .area .other2_wrap .abil .circle_wrap {
     width: 100%; 
     height: 80%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     position: absolute;
     bottom: 0;
 }
@@ -495,21 +528,37 @@ body {
     position: absolute; 
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap1 > .c_wrap1_lo {
+    /* border: 1px solid red; */
+    width: 90%;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo {
+    /* border: 1px solid red; */
+    width: 90%;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 #other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div:nth-child(2) {
     top: 50%;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div:nth-child(2) {
-    margin: 0 2.25rem;
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > div:nth-child(2) {
+    margin: 0 1.5rem;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > .progress {
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress {
     width: 7.5rem;
     height: 7.5rem;
     float: left;
     position: relative;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > .progress .progress_img {
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -517,7 +566,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > .progress .progress_img img {
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img img {
     width: 100%;
 }
 /* other2 Area */
@@ -677,6 +726,10 @@ body {
     width: 15rem;
     position: relative;
 }
+#direct .area .direct_box .direct_wrapper > div > p {
+    opacity: 0;
+    transition: 2s;
+}
 #direct .area .direct_box .direct_wrapper > div h5 {
     width: inherit;
     text-align: center;
@@ -689,6 +742,10 @@ body {
     font-size: .8rem;
     font-weight: bold;
     margin-top: 1rem;
+}
+#direct .area .direct_box .direct_wrapper > div > .dr2 {
+    font-weight: normal;
+    font-size: .7rem;
 }
 #direct .area .direct_box .direct_wrapper > div > .direct_img {
     width: 4rem;
@@ -711,6 +768,8 @@ body {
 #direct .area .direct_box .direct_wrapper .direct_3 .direct_img {
     background-image: url(../image/direct/dm.svg);
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1199px) {
     html, body {

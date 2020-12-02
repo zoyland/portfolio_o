@@ -20,14 +20,38 @@ var swiper = new Swiper('.swiper-container', {
   });
   // dark mode toggle move to right 
 
-  // $('#other1 .area .other_wrap .info ul li p').mouseover(function(){
-  //   $(this).siblings('img').effect("shake", { times:3 }, 100);
-  // });
-  // #other icon shaking
 
-  // $('#other1 .area .other_wrap .other_wrap2 .keyword ul > li > p').hover(function(){
-  //   $(this).css("background-color","")
-  // })
+  $(function() {
+    var interval = 10;
+    var duration= 1000;
+    var shake= 3;
+    var vibrateIndex = 0;
+    var selector = $('#other1 .area .other_wrap .info > ul > li > p'); 
+
+      $(selector).hover( 
+          function(){ 
+          vibrateIndex = setInterval(vibrate, interval);    
+          },
+          function(){ 
+              clearInterval(vibrateIndex);
+              $(selector).parent().find('img').stop(true, false)
+                  .css({position: 'static', left: '0px', top: '0px'});
+          }
+      );
+
+      var vibrate = function(){
+          $(selector).parent().find('img').stop(true, false)
+          .css({position: 'relative', 
+          left: Math.round(Math.random() * shake) - ((shake + 1) / 2) +'px', 
+          top: Math.round(Math.random() * shake) - ((shake + 1) / 2) +'px'
+          });
+      }
+  });
+  $('#other1 .area .other_wrap .other_wrap2 .keyword ul > li > p').hover(function(){
+    $(this).css("background-color","")
+  })
+    // #other icon shaking
+
 
   $('.base_hover').hover(function(){
     $(this).css({'display':'none'});
@@ -122,6 +146,9 @@ var swiper = new Swiper('.swiper-container', {
     });
     // other2 - circle progress bar
   
+    $('.direct_wrapper > div > div').click(function(){
+      $(this).siblings('.dr').css('opacity','1');
+    });
 // $(function(){
 //     $("html, body").animate({ scrollTop: 0 }, "slow"); 
 // });
