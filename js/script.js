@@ -61,6 +61,61 @@ var swiper = new Swiper('.swiper-container', {
         });
     });
 
+    $('.c_pa').circleProgress({
+      value: 0.85,
+      size: 150,
+      startAngle: -Math.PI /  4 * 2, 
+      emptyFill: "rgba(63, 156, 214, .5)",
+      fill: {
+        color: ["#3f9cd6"]
+      } 
+    });
+    $('.c_h').circleProgress({
+      value: 0.85,
+      size: 150,
+      startAngle: -Math.PI /  4 * 2, 
+      emptyFill: "rgba(63, 156, 214, .5)",
+      fill: {
+        color: ["#3f9cd6"]
+      } 
+    });
+    $('.c_c').circleProgress({
+      value: 0.8,
+      size: 150,
+      startAngle: -Math.PI /  4 * 2, 
+      emptyFill: "rgba(63, 156, 214, .5)",
+      fill: {
+        color: ["#3f9cd6"]
+      } 
+    });
+    $('.c_js').circleProgress({
+      value: 0.55,
+      size: 150,
+      startAngle: -Math.PI /  4 * 2, 
+      emptyFill: "rgba(63, 156, 214, .5)",
+      fill: {
+        color: ["#3f9cd6"]
+      } 
+    });
+    $('.c_jq').circleProgress({
+      value: 0.7,
+      size: 150,
+      startAngle: -Math.PI /  4 * 2, 
+      emptyFill: "rgba(63, 156, 214, .5)",
+      fill: {
+        color: ["#3f9cd6"]
+      } 
+    });
+    $('.c_b').circleProgress({
+      value: 0.75,
+      size: 150,
+      startAngle: -Math.PI /  4 * 2, 
+      emptyFill: "rgba(63, 156, 214, .5)",
+      fill: {
+        color: ["#3f9cd6"]
+      } 
+    });
+    // other2 - circle progress bar
   
 // $(function(){
 //     $("html, body").animate({ scrollTop: 0 }, "slow"); 

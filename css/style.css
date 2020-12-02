@@ -216,8 +216,8 @@ body {
 .cover {
     width: 80vw;
     height: 90vh;
-    border: 1px solid red;
     position: absolute;
+    background-color: #1e1e1e;
     top: 50%; 
     left: 15%;
     transform: translateY(-50%);
@@ -227,7 +227,6 @@ body {
     height: 90%;
     position: absolute;
     background-color: #1e1e1e;
-    border: 1px solid blue;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -371,14 +370,12 @@ body {
 #other1 .area .other_wrap .other_wrap2 {
     width: 100%; 
     height: 40%;
-    border: 1px solid blue;
 }
 #other1 .area .other_wrap .other_wrap2 .one_line {
     width: 40%;
     height: 100%; 
     float: left;
     position: relative;
-    border: 1px solid red;
 }
 #other1 .area .other_wrap .other_wrap2 .one_line .line_wrap {
     width: 90%;
@@ -431,6 +428,87 @@ body {
 
 #other2 {
     background-color: #1e1e1e;
+}
+#other2 .area p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+#other2 .area .other2_wrap {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid blue;
+}
+#other2 .area .other2_wrap .certi {
+    width: 35%;
+    height: 80%; 
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+#other2 .area .other2_wrap .abil {
+    width: 55%;
+    height: 80%; 
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+#other2 .area .other2_wrap .abil .circle_wrap {
+    width: 100%; 
+    height: 80%;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 0;
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2.5% 0;
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div:nth-child(2) {
+    top: 50%;
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div:nth-child(2) {
+    margin: 0 2.25rem;
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > .progress {
+    width: 7.5rem;
+    height: 7.5rem;
+    float: left;
+    position: relative;
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > .progress .progress_img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > .progress .progress_img img {
+    width: 100%;
 }
 /* other2 Area */
 
