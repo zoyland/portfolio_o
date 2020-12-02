@@ -25,6 +25,10 @@ var swiper = new Swiper('.swiper-container', {
   // });
   // #other icon shaking
 
+  // $('#other1 .area .other_wrap .other_wrap2 .keyword ul > li > p').hover(function(){
+  //   $(this).css("background-color","")
+  // })
+
   $('.base_hover').hover(function(){
     $(this).css({'display':'none'});
     $(this).parent().find('.base_hover2').css({'display':'block'});
@@ -60,6 +64,7 @@ var swiper = new Swiper('.swiper-container', {
             $(this).find("li:nth-child(4)").addClass('on');
         });
     });
+
 
     $('.c_pa').circleProgress({
       value: 0.85,
