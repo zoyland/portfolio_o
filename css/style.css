@@ -43,7 +43,15 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%);
 }
-.ld_1, .ld_2 {font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 20; color: #fff; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);}
+.ld_1, .ld_2 {
+    font-weight: 500; 
+    font-size: 1rem; 
+    color: #ddd; 
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
 .ld_1 {animation: ld_1 1s 1.9s forwards;}
 @keyframes ld_1 {
     0% {opacity: 1;}
@@ -57,7 +65,7 @@ body {
 .wrapper img {width: 100%;}
 .wrapper ul li {
     opacity: 0;
-    animation: bbb 3s infinite forwards; position: absolute; top: 0; left: 0;
+    animation: bbb 3s forwards; position: absolute; top: 0; left: 0;
 }
 .wrapper ul li:nth-child(1) {animation-delay: 0;}
 .wrapper ul li:nth-child(2) {animation-delay: 1s;}
@@ -108,7 +116,7 @@ body {
     height: 35px;
     width: 35px;
     border-radius: 100px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     position: absolute;
     left: 5%;
     top: 50%;
@@ -120,16 +128,35 @@ body {
 .toggler:hover .circle {
     background-color: #ddd;
 }
+.left p {
+    font-size: 2rem;
+    font-weight: bold;
+    width: auto;
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 38%;
+    left: -30%;
+    color: #3f9cd6;
+    opacity: .5;
+}
 .left .tab {
     width: 10rem;
     height: auto; 
-    border: 1px solid black;
     font-size: 2.5rem;
     text-align: right;
     font-weight: bold;
     position: absolute;
-    bottom: 15%;
+    bottom: 21%;
+    left: 5%;
+    transition: 3s;
 }
+.left .tab:hover {
+    text-align: left;
+}
+.left .tab:hover li::first-letter {
+    color: #3f9cd6;
+  }
+
 .fullscreen {
     width: 100%;
     height: 100%; 
@@ -290,6 +317,7 @@ body {
     color: #ddd;
     font-weight: 700;
     margin-top: 1rem;
+    word-break: break-all;
 }
 #base .area p {
     font-size: 4rem;
@@ -512,6 +540,7 @@ body {
     /* border: 1px solid #fff; */
     position: absolute;
     bottom: 0;
+    border: 1px solid green;
 }
 #other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
     width: 100%;
@@ -520,27 +549,28 @@ body {
     flex-direction: column;
     position: relative;
     margin: 2.5% 0;
+    border: 1px solid blue;
 }
 #other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
-    width: 80%;
+    width: 90%;
     height: 50%;
     display: flex;
     position: absolute; 
     left: 50%;
     transform: translateX(-50%);
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
 }
 #other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap1 > .c_wrap1_lo {
-    /* border: 1px solid red; */
-    width: 90%;
+    border: 1px solid red;
+    width: 85%;
     position: absolute;
     left: 50%; 
     top: 50%;
     transform: translate(-50%, -50%);
 }
 #other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo {
-    /* border: 1px solid red; */
-    width: 90%;
+    border: 1px solid red;
+    width: 85%;
     position: absolute;
     left: 50%; 
     top: 50%;
