@@ -148,7 +148,6 @@ body {
     position: absolute;
     bottom: 21%;
     left: 5%;
-    transition: 3s;
 }
 .left .tab:hover {
     text-align: left;
@@ -640,8 +639,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%; 
     height: 80%;
-    /* overflow: hidden; */
-    border: 1px solid red;
+    overflow: hidden;
 }
 #label .pf_wrap .pfarea .guide {
     text-align: center;
@@ -655,33 +653,31 @@ body {
 #label .pf_wrap .pfarea .pf_item {
     width: 200%;
     height: 80%;
-    border: 1px solid black;
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
 }
 #label .pf_wrap .pfarea .pf_item li {
     float: left;
-    width: 15%;
+    width: 16%;
     height: 100%;
-    border: 1px solid green;
     position: relative;
     font-size: .7rem;
     opacity: .8;
+    margin-left: .5%;
 }
 /* #label .pf_wrap .pfarea .pf_item li.on {
     width: 17%;
 } */
-#label .pf_wrap .pfarea .pf_item li:nth-child(n+2) {
+/* #label .pf_wrap .pfarea .pf_item li:nth-child(n+2) {
     margin-left: 2.5%;
-}
+} */
 #label .pf_wrap .pfarea .pf_item li .pf_item_wrap {
     width: 100%;
     height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid blue;
 }
 #label .pf_wrap .pfarea .pf_item li .pf_preview {
     /* position: absolute; */
@@ -692,6 +688,7 @@ body {
     border-radius: 50%;   
     opacity: .7;
 }
+#label .pf_wrap .pfarea .pf_item li .pf_preview a {}
 #label .pf_wrap .pfarea .pf_item .pf_item_wrap .pf_preview:hover {
 }
 #label .pf_wrap .pfarea .pf_item li .pf_preview {
@@ -699,12 +696,18 @@ body {
     background-size: cover;
 }
 #label .pf_wrap .pfarea .pf_item .pf1 .pf_preview {background-image: url(../image/label/museum.png);}
-#label .pf_wrap .pfarea .pf_item .pf2 .pf_preview {background-image: url(../image/label/museum.png);}
-#label .pf_wrap .pfarea .pf_item .pf3 .pf_preview {background-image: url();}
-#label .pf_wrap .pfarea .pf_item .pf4 .pf_preview {background-image: url();}
-#label .pf_wrap .pfarea .pf_item .pf5 .pf_preview {background-image: url();}
-#label .pf_wrap .pfarea .pf_item .pf6 .pf_preview {background-image: url();}
+#label .pf_wrap .pfarea .pf_item .pf2 .pf_preview {background-image: url(../image/label/garden.jpg);}
+#label .pf_wrap .pfarea .pf_item .pf3 .pf_preview {background-image: url(../image/label/tea.jpg);}
+#label .pf_wrap .pfarea .pf_item .pf4 .pf_preview {background-image: url(../image/label/genesis.jpg);}
+#label .pf_wrap .pfarea .pf_item .pf5 .pf_preview {background-image: url(../image/label/chanel.jpg);}
 
+#label .pf_wrap .pfarea .pf_item li .pf_preview a {
+    width: 11rem;
+    height: 11rem;
+    z-index: 99;
+    background-color: transparent;
+    border-radius: 50%;
+}
 #label .pf_wrap .pfarea .pf_item li p {
     font-family: 'GmarketSansLight';
     font-weight: bold;
@@ -716,12 +719,11 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid blue;
 }
 #label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
     width: 17rem;
     height: 17rem;
-    opacity: 1;
+    opacity: .9;
 }
 #label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
     font-size: 1.2rem;

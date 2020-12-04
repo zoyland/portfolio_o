@@ -8,6 +8,7 @@ var swiper = new Swiper('.swiper-container', {
   })
   // horizontal scrolling 
 
+
   $('.left .tab').mouseover(function(){
     $(this).prev('p').stop().animate({'left':'-19%'});
   });
@@ -47,25 +48,25 @@ var swiper = new Swiper('.swiper-container', {
   //       $pfarea.css("width" , "200%");
   //       $pfarea.css("height" , "80%");
 
-  //       $pfarea.animate({"left": "-35%"}, 1000, function(){
+  //       $pfarea.animate({"left": "-33%"}, 1000, function(){
   //           $(this).append("<li>" + $(this).find("li:first").html() + "</li>");
   //           $(this).find("li:first").remove();
   //           $(this).css("left", "0%");
   //           $(this).find("li").removeClass('on');
-  //           $(this).find("li:nth-child(2)").addClass('on');
+  //           $(this).find('li').eq(1).addClass('on');
   //       });
   //   });
   //   $('.goingright').click(function(){
   //       $pfarea.css("width" , "200%");
   //       $pfarea.css("height" , "80%");
 
-  //       $pfarea.animate({"right": "-35%"}, 1000, function(){
-  //           $(this).append("<li>" + $(this).find("li:last").html() + "</li>");
-  //           // console.log("<li>" + $(this).find("li:last").html()+ "</li>");
-  //           $(this).find("li:last").remove();
-  //           $(this).css("right", "0%");
+  //       $pfarea.animate({"left": "33%"}, 1000, function(){
+  //         $(this).prepend("<li>" + $(this).find("li:last").html() + "</li>");
+  //         $(this).css("left", "0%");
+  //         // console.log("<li>" + $(this).find("li:last").html()+ "</li>");
+  //         $(this).find("li:last").remove();
   //           $(this).find("li").removeClass('on');
-  //           $(this).find("li:nth-child(4)").addClass('on');
+  //           $(this).find('li').eq(1).addClass('on');
   //       });
   //   });
     // slide 
@@ -138,8 +139,6 @@ var swiper = new Swiper('.swiper-container', {
 
 
 // var currentIndex = 0;
-var currentIdx = 0;
-var slideLength = $('.pf_item > li').length;
 
 
 
@@ -163,30 +162,67 @@ var slideLength = $('.pf_item > li').length;
 //     currentIdx = (slideLength - 1);
 //   }
 // });
+//.............................
+
+var slide = $('.pf_item > li'),
+    slidewrap = $('.pf_item');
+var currentIdx = 0;
+
+var slideLength = $('.pf_item > li').length,
+    slideWidth = $('.pf_item > li').innerwidth,
+    showNum = 3,
+    num = 0;
+
+var current2 = $('.pf_item > li')[1];
+console.log(current2);
+
+console.log(slideWidth);
+console.log(slide);
+console.log(slideLength);
 
 $('.goingleft').click(function(){
-  setInterval(function(){
     goingleft();
-  });
+    slide.removeClass('on');
+    $('.pf_item > li').eq(2).addClass('on');
 });
 $('.goingright').click(function(){
   goingright();
-});
+  slide.removeClass('on');
+  $('.pf_item > li').eq(1).addClass('on');
 
+});
+//.............................
+// function goingleft() {
+//   if(num == 0) {
+//     num = slideLength;
+//     slidewrap.css("left", -35 * slideWidth + "%");
+//   }
+//   num--;
+//   slidewrap.stop().animate({left: -slideWidth * num + "%"});
+// }
+
+
+/*
 function goingleft() {
+  var nextIdx = currentIdx + 1;
+  $('.pf_item').stop().animate(
+    {
+      'left' : '-33' * nextIdx + '%'
+  });
+  console.log('-33' * nextIdx + '%');
+    //  "-" + ' (currentIdx + 1) * 33' + "%"; 
   if (currentIdx !== (slideLength - 1)) {
-    $('.pf_item').animate(
-            {'left':'-35%'}
-          )
     currentIdx += 1;
   } else {
     currentIdx = 0;
   }
+  console.log(currentIdx);
 }
+
 function goingright()  {
   if ((slideLength - 1) !== currentIdx) {
     $('.pf_item').animate(
-      {'left':'-35%'}
+      {'right':'-34%'}
     )
     currentIdx -= 1;
     
@@ -194,3 +230,27 @@ function goingright()  {
     currentIdx = (slideLength - 1);
   }
 }
+*/
+//.............................
+
+function goingleft() {
+  var firstIdx = $('.pf_item li').first();
+  $('.pf_item').animate({
+    'left':'-33%'
+  },1000,function(){
+    $('.pf_item').append(firstIdx).css('left','0%');
+  });
+}
+function goingright() {
+  var lastIdx = $('.pf_item li').last();
+  $('.pf_item').prepend(lastIdx).css('left','-33%');
+  $('.pf_item').animate({
+    'left':'0%'
+  },1000);
+}
+
+
+$('.swiper-slide').each(function(){
+  var text = $(this).text();
+  console.log(text);
+});
