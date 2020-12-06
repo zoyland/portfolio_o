@@ -43,26 +43,34 @@ p.point {
     z-index: 9999;
     animation: loading 1s 3s forwards;
 }
-@keyframes loading {
+/* @keyframes loading {
     0% {top: 0;}
     100% {top: -100%;}
-}
-.wrapper {
-    width: 100px; 
-    height: 100px; 
+} */
+.loading .loading_wrap {
+    width: 30%;
+    height: 15%;
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+.wrapper {
+    width: 100px; 
+    height: 100px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
 }
 .ld_1, .ld_2 {
+    width: 100%;
     font-weight: 500; 
     font-size: 1rem; 
     color: #ddd; 
     position: absolute; 
-    top: 40%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
+    z-index: 99;
 }
 .ld_1 {animation: ld_1 1s 1.9s forwards;}
 @keyframes ld_1 {
@@ -74,10 +82,14 @@ p.point {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-.wrapper img {width: 100%;}
+.wrapper img {
+    display: block;
+    width: 100px;
+}
 .wrapper ul li {
     opacity: 0;
-    animation: bbb 3s forwards; position: absolute; top: 0; left: 0;
+    animation: bbb 3s forwards; 
+    position: absolute; left: 50%; transform: translateX(-50%);
 }
 .wrapper ul li:nth-child(1) {animation-delay: 0;}
 .wrapper ul li:nth-child(2) {animation-delay: 1s;}
