@@ -43,10 +43,10 @@ p.point {
     z-index: 9999;
     animation: loading 1s 3s forwards;
 }
-/* @keyframes loading {
+@keyframes loading {
     0% {top: 0;}
     100% {top: -100%;}
-} */
+}
 .loading .loading_wrap {
     width: 30%;
     height: 15%;
