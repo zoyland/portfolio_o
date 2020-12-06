@@ -427,7 +427,7 @@ p.point {
     position: relative;
 }
 .other1 .area .other_wrap .other_wrap1 .info ul {
-    width: 80%;
+    width: 85%;
     height: auto;
     text-align: left;
     position: absolute;
@@ -767,7 +767,7 @@ ul {
     height: 11rem;
     background-color: #000;
     border-radius: 50%;   
-    opacity: .7;
+    opacity: .5;
 }
 .label .pf_wrap .pfarea .pf_item li .pf_preview:hover {
     cursor: url(../image/lookinto.png), auto; 
@@ -776,7 +776,7 @@ ul {
     background-position: center center;
     background-size: cover;
 }
-.label .pf_wrap .pfarea .pf_item .pf1 .pf_preview {background-image: url(../image/label/museum.png);}
+.label .pf_wrap .pfarea .pf_item .pf1 .pf_preview {background-image: url(../image/label/museum.jpg);}
 .label .pf_wrap .pfarea .pf_item .pf2 .pf_preview {background-image: url(../image/label/garden.jpg);}
 .label .pf_wrap .pfarea .pf_item .pf3 .pf_preview {background-image: url(../image/label/tea.jpg);}
 .label .pf_wrap .pfarea .pf_item .pf4 .pf_preview {background-image: url(../image/label/genesis.jpg);}
@@ -846,7 +846,7 @@ ul {
 }
 .direct .area .direct_box .direct_wrapper > div > p {
     opacity: 0;
-    transition: 2s;
+    transition: 1s;
 }
 .direct .area .direct_box .direct_wrapper > div h5 {
     width: inherit;
