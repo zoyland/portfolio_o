@@ -21,6 +21,18 @@ body {
     margin: 0;
     padding: 0;
 }
+body p {
+    color: #ddd;
+}
+body .light p {
+    color: #1e1e1e
+}
+p.point {
+    color: #3f9cd6;
+}
+.light p.point {
+    color: #2f632f;
+}
 .loading {
     width: 100%; 
     height: 100%; 
@@ -86,13 +98,10 @@ body {
     background-color: #1e1e1e; 
     left: 0; 
     z-index: 99; 
-    transition: 1s;
-    /* display: none; */
     opacity: .5;
 }
 .left:hover {
-    width: 15%;
-    opacity: 1;
+    opacity: .9;
 }
 .toggler-container {
     margin-left: auto;
@@ -112,21 +121,34 @@ body {
     transition: all 0.3s ease-in-out;
 }
 .circle {
-    background-color: #181818;
+    background-color: #1e1e1e;
     height: 35px;
     width: 35px;
     border-radius: 100px;
-    transition: all 0.1s ease-in-out;
     position: absolute;
     left: 5%;
     top: 50%;
     transform: translateY(-50%);
+    transition: 1s;
+}
+.circle.active {
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    position: absolute;
+    left: 59%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 1s;
 }
 .toggler:hover {
     background: #3f9cd6;
 }
 .toggler:hover .circle {
     background-color: #ddd;
+}
+.light .toggler:hover .circle {
+    background-color: #1e1e1e;
 }
 .left p {
     font-size: 2rem;
@@ -138,7 +160,8 @@ body {
     left: -30%;
     color: #3f9cd6;
     opacity: .5;
-}
+} 
+/* 왼쪽에 글씨 나오는 거  */
 .left .tab {
     width: 10rem;
     height: auto; 
@@ -154,8 +177,13 @@ body {
 }
 .left .tab:hover li::first-letter {
     color: #3f9cd6;
-  }
-
+}
+.light .left .tab a {
+    color: #1e1e1e;
+}
+.light .left .tab:hover li::first-letter {
+    color: #2f632f;
+}
 .fullscreen {
     width: 100%;
     height: 100%; 
@@ -180,6 +208,9 @@ body {
 }
 .light .point {
     color: #3f9cd6;
+}
+.light .cover {
+    background-color: #ddd;
 }
 .light .area {
     background-color: #ddd;
@@ -258,10 +289,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#base {
+.base {
     /* background-color: #aaa; */
 }
-#base .cover > p {
+.base .cover > p {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -269,15 +300,15 @@ body {
     font-weight: 500;
     text-align: right;
 }
-#base .cover > p:hover {
+.base .cover > p:hover {
     font-weight: bold;
     cursor: url(../image/okay.png), auto;
 }
-#base .area {
+.base .area {
     width: 90%;
     position: relative;
 }
-#base .area .base_wrap {
+.base .area .base_wrap {
     height: auto;
     width: 90%;
     position: absolute;
@@ -285,15 +316,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#base .area .base_wrap p:nth-child(1) {
+.base .area .base_wrap p:nth-child(1) {
     position: relative;
     text-align: left;
 }
-#base .area .base_wrap .p2 {
+.base .area .base_wrap .p2 {
     position: relative;
     text-align: right;
 }
-#base .area .base_hover {
+.base .area .base_hover {
     text-align: center;
     font-size: 6.5rem;
     color: #ddd;
@@ -301,7 +332,7 @@ body {
     margin: 1rem 0;
     position: relative;
 }
-#base .area .base_hover2 {
+.base .area .base_hover2 {
     display: none;
     text-align: center;
     font-size: 6.5rem;
@@ -310,7 +341,7 @@ body {
     margin: 1rem 0;
     position: relative;
 }
-#base .area .base_hover2 h1 {
+.base .area .base_hover2 h1 {
     text-align: center;
     font-size: 6.5rem;
     color: #ddd;
@@ -318,24 +349,32 @@ body {
     margin-top: 1rem;
     word-break: break-all;
 }
-#base .area p {
+.light .base .area .base_hover2 h1 {
+    color: #1e1e1e;
+}
+.base .area p {
     font-size: 4rem;
     font-weight: bold;
     color: #ddd;
 }
+.light .base .area p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
 
-#base .area .base_wrap:hover {
+.base .area .base_wrap:hover {
     cursor: default;
 }
 /* Base Area */
 
-#other1 {
+.other1 {
     background-color: #1e1e1e;
 }
 #other .area {
     position: relative;
 }
-#other1 .area .other_wrap {
+.other1 .area .other_wrap {
     width: 90%;
     height: 90%;
     position: absolute;
@@ -343,17 +382,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other1 .area .other_wrap .other_wrap1 {
+.other1 .area .other_wrap .other_wrap1 {
     width: 100%; 
     height: 60%;
 }
-#other1 .area .other_wrap .other_wrap1 .profic {
-    width: 40%;
+.other1 .area .other_wrap .other_wrap1 .profic {
+    width: 50%;
     height: 100%;
     position: relative;
     float: left;
 }
-#other1 .area .other_wrap .other_wrap1 .profic > div {
+.other1 .area .other_wrap .other_wrap1 .profic > div {
     width: 17rem;
     height: 17rem;
     border-radius: 50%;
@@ -362,87 +401,92 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other1 .area .other_wrap .other_wrap1 .profic > div > .pic{
+.other1 .area .other_wrap .other_wrap1 .profic > div > .pic{
     background-image: url(../image/profic.png);
-    /* background-image: url(../image/profic2.png); */
     background-size: cover;
     background-position: center center;
     width: 100%;
     height: 100%;
 }
-#other1 .area .other_wrap .other_wrap1 .info {
-    width: 60%;
+.other1 .area .other_wrap .other_wrap1 .info {
+    width: 50%;
     height: 100%;
     float: left;
     position: relative;
 }
-#other1 .area .other_wrap .other_wrap1 .info ul {
-    width: 70%;
+.other1 .area .other_wrap .other_wrap1 .info ul {
+    width: 80%;
     height: auto;
     text-align: left;
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
-#other1 .area .other_wrap .other_wrap1 .info ul li {
+.other1 .area .other_wrap .other_wrap1 .info ul li {
     display: flex;
     margin: 1rem 0;
 }
-#other1 .area .other_wrap .other_wrap1 .info ul li img {
+.other1 .area .other_wrap .other_wrap1 .info ul li img {
     width: 2rem;
     height: 2rem;
 }
-#other1 .area .other_wrap .other_wrap1 .info ul li p {
+.other1 .area .other_wrap .other_wrap1 .info ul li p {
     display: inline-block;
     line-height: 2rem;
     margin-left: 1rem;
     font-size: .9rem;
     font-weight: bold;
 }
-#other1 .area .other_wrap .other_wrap1 .info ul li p:hover {
+.other1 .area .other_wrap .other_wrap1 .info ul li p:hover {
     cursor: pointer;
 }
-#other1 .area .other_wrap .other_wrap1 .info ul li p span {
+.other1 .area .other_wrap .other_wrap1 .info ul li p span {
     font-family: 'GmarketSansLight';
 }
-
-#other1 .area .other_wrap .other_wrap2 {
+.other1 .area .other_wrap .other_wrap2 {
     width: 100%; 
     height: 40%;
 }
-#other1 .area .other_wrap .other_wrap2 .one_line {
-    width: 40%;
+.other1 .area .other_wrap .other_wrap2 .one_line {
+    width: 50%;
     height: 100%; 
     float: left;
     position: relative;
 }
-#other1 .area .other_wrap .other_wrap2 .one_line .line_wrap {
+.other1 .area .other_wrap .other_wrap2 .one_line .line_wrap {
     width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other1 .area .other_wrap .other_wrap2 .one_line .line_wrap p {
+.other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
-#other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .quote {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 1rem;
+.other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing li {
+    margin: .5rem 0;
 }
-#other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img {
+.light .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing li {
+    color: #1e1e1e;
+}
+.other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing li:nth-child(3) {
+    margin: 1rem 0;
+    font-weight: normal;
+}
+.other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img {
     width: 3rem;
     height: 3rem;
+    opacity: .6;
 }
-#other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img:nth-child(2) {
+.other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img:nth-child(2) {
     width: 2.5rem;
     height: 2.5rem;
+    opacity: .6;
 }
-#other1 .area .other_wrap .other_wrap2 .keyword {
+.other1 .area .other_wrap .other_wrap2 .keyword {
     width: 50%;
     height: 100%;
     float: right;
@@ -450,48 +494,73 @@ body {
     font-size: 1rem;
     position: relative;
 }
-#other1 .area .other_wrap .other_wrap2 .keyword .kw_wrap {
-    width: 88%;
+.other1 .area .other_wrap .other_wrap2 .keyword .kw_wrap {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other1 .area .other_wrap .other_wrap2 .keyword .kw_wrap ul {
-    width: 90%;
-    height: 15%;
-    text-align: left;
+.other1 .area .other_wrap .other_wrap2 .keyword .kw_wrap ul {
+    width: 100%;
+    /* height: 15%; */
+    text-align: center;
 }
-#other1 .area .other_wrap .other_wrap2 .keyword ul > li {
-    width: 45%;
-    float: left;
-    margin: .5rem auto;
+.other1 .area .other_wrap .other_wrap2 .keyword ul > li {
+    width: 50%;
+    display: inline-block;
+    margin: .5rem 0;
 }
-#other1 .area .other_wrap .other_wrap2 .keyword ul > li:nth-child(2) {
-    margin-left: 2rem;
+.other1 .area .other_wrap .other_wrap2 .keyword ul > li:nth-child(2) {
+    float: right;
 }
-#other1 .area .other_wrap .other_wrap2 .keyword ul > li > p {
+.other1 .area .other_wrap .other_wrap2 .keyword ul > li > p {
     display: inline-block;
     background-color: transparent;
 
 }
-#other1 .area .other_wrap .other_wrap2 .keyword ul > li > p:hover {
+.other1 .area .other_wrap .other_wrap2 .keyword ul > li > p:hover {
     cursor: pointer;
     background-color: rgba(63, 156, 214, .7);
     transition: .5s;
 }
+.light .other1 .area .other_wrap .other_wrap2 .keyword ul > li > p:hover {
+    cursor: pointer;
+    background-color: rgba(47, 99, 47, .7);
+    transition: .5s;
+}
+.typing-txt {
+    display: none;
+}
+ul {
+    list-style:none;
+}
+.typing ul li{
+    display:block;
+}
+.typing ul li.on {  
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite; 
+    } 
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+    }
 
-#other2 {
+.other2 {
     background-color: #1e1e1e;
 }
-#other2 .area p {
+.other2 .area p {
     font-size: 1.5rem;
     font-weight: bold;
     display: block;
     margin: 1.5rem 0;
     text-align: center;
 }
-#other2 .area .other2_wrap {
+.other2 .area .other2_wrap {
     width: 90%;
     height: 80%;
     position: absolute;
@@ -500,7 +569,7 @@ body {
     transform: translate(-50%, -50%);
     /* border: 1px solid blue; */
 }
-#other2 .area .other2_wrap .certi {
+.other2 .area .other2_wrap .certi {
     width: 35%;
     height: 80%; 
     /* border: 1px solid #fff; */
@@ -509,7 +578,7 @@ body {
     left: 5%;
     transform: translateY(-50%);
 }
-#other2 .area .other2_wrap .certi .certi_wrap {
+.other2 .area .other2_wrap .certi .certi_wrap {
     font-family: 'GmarketSansLight';
     font-weight: normal;
     /* border: 1px solid blue; */
@@ -519,12 +588,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other2 .area .other2_wrap .certi .certi_wrap p {
+.other2 .area .other2_wrap .certi .certi_wrap p {
     display: block;
     font-size: 1.1rem;
     margin: 2rem 0;
 }
-#other2 .area .other2_wrap .abil {
+.other2 .area .other2_wrap .abil {
     width: 55%;
     height: 80%; 
     /* border: 1px solid red; */
@@ -533,7 +602,7 @@ body {
     right: 5%;
     transform: translateY(-50%);
 }
-#other2 .area .other2_wrap .abil .circle_wrap {
+.other2 .area .other2_wrap .abil .circle_wrap {
     width: 100%; 
     height: 80%;
     /* border: 1px solid #fff; */
@@ -541,7 +610,7 @@ body {
     bottom: 0;
     border: 1px solid green;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
     width: 100%;
     height: 90%;
     display: flex;
@@ -550,7 +619,7 @@ body {
     margin: 2.5% 0;
     border: 1px solid blue;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
     width: 90%;
     height: 50%;
     display: flex;
@@ -559,7 +628,7 @@ body {
     transform: translateX(-50%);
     border: 1px solid #fff;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap1 > .c_wrap1_lo {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap1 > .c_wrap1_lo {
     border: 1px solid red;
     width: 85%;
     position: absolute;
@@ -567,7 +636,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo {
     border: 1px solid red;
     width: 85%;
     position: absolute;
@@ -575,19 +644,19 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div:nth-child(2) {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div:nth-child(2) {
     top: 50%;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > div:nth-child(2) {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > div:nth-child(2) {
     margin: 0 1.5rem;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress {
     width: 7.5rem;
     height: 7.5rem;
     float: left;
     position: relative;
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -595,21 +664,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img img {
+.other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img img {
     width: 100%;
 }
 /* other2 Area */
 
-#label {
+.label {
     background-color: #1e1e1e;
 }
 /* label area */
-#label .pf_wrap {
+.label .pf_wrap {
     width: 100%;
     height: 80vh;
     position: relative;
 }
-#label .pf_wrap button {
+.label .pf_wrap button {
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
@@ -617,22 +686,22 @@ body {
     background-color: transparent;
     border: none;
 }
-#label .pf_wrap button:hover {
+.label .pf_wrap button:hover {
     cursor: pointer;
 }
-#label .pf_wrap button:first-child {
+.label .pf_wrap button:first-child {
     position: absolute;
     top: 50%;
     right: 5%;
     transform: translateY(-50%);
 }
-#label .pf_wrap button:nth-child(2) {
+.label .pf_wrap button:nth-child(2) {
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
 }
-#label .pf_wrap .pfarea {
+.label .pf_wrap .pfarea {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -641,23 +710,23 @@ body {
     height: 80%;
     overflow: hidden;
 }
-#label .pf_wrap .pfarea .guide {
+.label .pf_wrap .pfarea .guide {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem 0;
 }
-#label .pf_wrap .pfarea .guide span {
+.label .pf_wrap .pfarea .guide span {
     font-style: italic;
 }
-#label .pf_wrap .pfarea .pf_item {
+.label .pf_wrap .pfarea .pf_item {
     width: 200%;
     height: 80%;
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
 }
-#label .pf_wrap .pfarea .pf_item li {
+.label .pf_wrap .pfarea .pf_item li {
     float: left;
     width: 16%;
     height: 100%;
@@ -666,20 +735,20 @@ body {
     opacity: .8;
     margin-left: .5%;
 }
-/* #label .pf_wrap .pfarea .pf_item li.on {
+/* .label .pf_wrap .pfarea .pf_item li.on {
     width: 17%;
 } */
-/* #label .pf_wrap .pfarea .pf_item li:nth-child(n+2) {
+/* .label .pf_wrap .pfarea .pf_item li:nth-child(n+2) {
     margin-left: 2.5%;
 } */
-#label .pf_wrap .pfarea .pf_item li .pf_item_wrap {
+.label .pf_wrap .pfarea .pf_item li .pf_item_wrap {
     width: 100%;
     height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-#label .pf_wrap .pfarea .pf_item li .pf_preview {
+.label .pf_wrap .pfarea .pf_item li .pf_preview {
     /* position: absolute; */
     margin: auto;
     width: 11rem;
@@ -688,55 +757,55 @@ body {
     border-radius: 50%;   
     opacity: .7;
 }
-#label .pf_wrap .pfarea .pf_item li .pf_preview a {}
-#label .pf_wrap .pfarea .pf_item .pf_item_wrap .pf_preview:hover {
+.label .pf_wrap .pfarea .pf_item li .pf_preview:hover {
+    cursor: url(../image/lookinto.png), auto; 
 }
-#label .pf_wrap .pfarea .pf_item li .pf_preview {
+.label .pf_wrap .pfarea .pf_item li .pf_preview {
     background-position: center center;
     background-size: cover;
 }
-#label .pf_wrap .pfarea .pf_item .pf1 .pf_preview {background-image: url(../image/label/museum.png);}
-#label .pf_wrap .pfarea .pf_item .pf2 .pf_preview {background-image: url(../image/label/garden.jpg);}
-#label .pf_wrap .pfarea .pf_item .pf3 .pf_preview {background-image: url(../image/label/tea.jpg);}
-#label .pf_wrap .pfarea .pf_item .pf4 .pf_preview {background-image: url(../image/label/genesis.jpg);}
-#label .pf_wrap .pfarea .pf_item .pf5 .pf_preview {background-image: url(../image/label/chanel.jpg);}
+.label .pf_wrap .pfarea .pf_item .pf1 .pf_preview {background-image: url(../image/label/museum.png);}
+.label .pf_wrap .pfarea .pf_item .pf2 .pf_preview {background-image: url(../image/label/garden.jpg);}
+.label .pf_wrap .pfarea .pf_item .pf3 .pf_preview {background-image: url(../image/label/tea.jpg);}
+.label .pf_wrap .pfarea .pf_item .pf4 .pf_preview {background-image: url(../image/label/genesis.jpg);}
+.label .pf_wrap .pfarea .pf_item .pf5 .pf_preview {background-image: url(../image/label/chanel.jpg);}
 
-#label .pf_wrap .pfarea .pf_item li .pf_preview a {
+.label .pf_wrap .pfarea .pf_item li .pf_preview a {
     width: 11rem;
     height: 11rem;
     z-index: 99;
     background-color: transparent;
     border-radius: 50%;
 }
-#label .pf_wrap .pfarea .pf_item li p {
+.label .pf_wrap .pfarea .pf_item li p {
     font-family: 'GmarketSansLight';
     font-weight: bold;
     margin-top: 2rem;
 }
-#label .pf_wrap .pfarea .pf_item li.on .pf_item_wrap {
+.label .pf_wrap .pfarea .pf_item li.on .pf_item_wrap {
     width: 100%;
     height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-#label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
+.label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
     width: 17rem;
     height: 17rem;
-    opacity: .9;
+    opacity: 1;
 }
-#label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
+.label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
     font-size: 1.2rem;
 }
 /* label area */
 
-#direct {
+.direct {
     background-color: #1e1e1e;
 }
-#direct .area {
+.direct .area {
     position: relative;
 }
-#direct .area .direct_box {
+.direct .area .direct_box {
     width: 45rem;
     height: auto;
     position: absolute;
@@ -744,66 +813,92 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#direct .area .direct_box p {
+.direct .area .direct_box p {
     width: 45rem;
     height: auto;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
 }
-#direct .area .direct_box p span {
+.direct .area .direct_box p span {
     font-style: italic;
 }
-#direct .area .direct_box .direct_wrapper {
+.direct .area .direct_box .direct_wrapper {
     width: 100%; 
     height: auto; 
     display: flex;
 }
-#direct .area .direct_box .direct_wrapper > div {
+.direct .area .direct_box .direct_wrapper > div {
     width: 15rem;
     position: relative;
 }
-#direct .area .direct_box .direct_wrapper > div > p {
+.direct .area .direct_box .direct_wrapper > div > p {
     opacity: 0;
     transition: 2s;
 }
-#direct .area .direct_box .direct_wrapper > div h5 {
+.direct .area .direct_box .direct_wrapper > div h5 {
     width: inherit;
     text-align: center;
     font-size: .8rem;
     font-weight: bold;
     margin-top: 10rem;
 }
-#direct .area .direct_box .direct_wrapper > div p {
+.direct .area .direct_box .direct_wrapper > div p {
     width: inherit;
     font-size: .8rem;
     font-weight: bold;
     margin-top: 1rem;
 }
-#direct .area .direct_box .direct_wrapper > div > .dr2 {
+.direct .area .direct_box .direct_wrapper > div > .dr2 {
     font-weight: normal;
     font-size: .7rem;
 }
-#direct .area .direct_box .direct_wrapper > div > .direct_img {
-    width: 4rem;
-    height: 4rem;
+.direct .area .direct_box .direct_wrapper > div > .direct_img {
+    width: 3.5rem;
+    height: 3.5rem;
     position: absolute;
     left: 50%; 
     transform: translateX(-50%);
     margin-top: 5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
-#direct .area .direct_box .direct_wrapper > div > .direct_img:hover {
+.light .direct .area .direct_box .direct_wrapper > div > .direct_img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.direct .area .direct_box .direct_wrapper > div > .direct_img:hover {
     cursor: url(../image/contact.png), auto;
 }
-#direct .area .direct_box .direct_wrapper .direct_1 .direct_img {
-    background-image: url(../image/direct/phone.svg);
+.direct .area .direct_box .direct_wrapper .direct_1 .direct_img {
+    background-image: url(../image/direct/d_phone.svg);
 }
-#direct .area .direct_box .direct_wrapper .direct_2 .direct_img {
-    background-image: url(../image/direct/mail.svg);
+ .direct .area .direct_box .direct_wrapper .direct_2 .direct_img {
+    background-image: url(../image/direct/d_mail.svg);
 }
-#direct .area .direct_box .direct_wrapper .direct_3 .direct_img {
-    background-image: url(../image/direct/dm.svg);
+.direct .area .direct_box .direct_wrapper .direct_3 .direct_img {
+    background-image: url(../image/direct/d_insta.svg);
+}
+.light .direct .area .direct_box .direct_wrapper .direct_1 .direct_img {
+    background-image: url(../image/direct/d_phone_l.svg);
+}
+.light .direct .area .direct_box .direct_wrapper .direct_2 .direct_img {
+    background-image: url(../image/direct/d_mail_l.svg);
+}
+.light .direct .area .direct_box .direct_wrapper .direct_3 .direct_img {
+    background-image: url(../image/direct/d_insta_l.svg);
+}
+.light .direct .area .direct_box .direct_wrapper > div h5 {
+    color: #1e1e1e;
+}
+.light .direct .area .direct_box .direct_wrapper > div > .point {
+    color: #2f632f;
 }
 
 
