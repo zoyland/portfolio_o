@@ -1221,159 +1221,112 @@ ul {
         width: 3rem;
         height: 3rem;
     }
+}
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    /* html, body {
+    html, body {
         font-size: 16px;
     }
+    .wrapper img {
+        margin-top: 1%;
+    }
+    /* Loading Area */
     .left .left_wrap .left_txt .appeal1 {
         display: none;
     }
     .left .left_wrap .left_txt .appeal2 {
         display: none;
     }
-    .other2 .area p {
-        font-size: 1.8rem;
+
+
+    .other2 .area .abil_title {
+        margin-top: .5rem;
     }
     .other2 .area .other2_wrap {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+        height: 75%;
     }
     .other2 .area .other2_wrap .certi {
-        width: 100%;
-        height: 20%; 
-        position: absolute;
-        top: 10%;
-        left: 0;
-    }
-    .other2 .area .other2_wrap .certi > p {
-        width: 50%;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-    }
-    .other2 .area .other2_wrap .certi .certi_wrap {
-        width: 50%;
-        height: 100%;
-        top: 50%;
+        width: 90%;
+        height: 35%; 
+        top: -5%;
         left: 50%;
-        transform: translateY(-50%);
+        transform: translateY(0);
+        transform: translateX(-50%);
     }
     .other2 .area .other2_wrap .certi .certi_wrap p {
         display: block;
-        font-size: 1.1rem;
-        margin: 1.1rem 0;
+        font-size: 1rem;
+        margin: 1.2rem 0;
     }
     .other2 .area .other2_wrap .abil {
-        width: 100%;
-        height: 80%; 
-        position: absolute;
-        bottom: 0;
-        top: 60%;
+        width: 90%;
+        height: 62%; 
+        top: 35%;
         right: 0;
-        transform: translateY(-50%);
-    }
-    .other2 .area .other2_wrap .abil p {
-        width: 50%;
-        display: inline-block;
-        position: absolute;
-        left: 0; 
-        transform: none;
+        left: 50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
     }
     .other2 .area .other2_wrap .abil .circle_wrap {
-        width: 100%; 
-        height: 85%;
-        position: absolute;
+        height: 90%;
         bottom: 0;
     }
     .other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: 0;
-        align-content: space-between; 
+        height: 100%;
+        margin: 1% 0 3% 0;
     }
-    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
-        width: 90%;
-        height: 50%;
-        display: flex;
-        position: absolute; 
-        left: 50%;
-        transform: translateX(-50%);
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress {
+        width: 7.5rem;
+        height: 7.5rem;
+        float: left;
+        position: relative;
     }
     .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
-        width: 6.5rem;
-        height: 6.5rem;
-        top: 60%;
+        width: 5rem;
     }
-    .label .pf_wrap button {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 2.5rem;
-    }
-    .label .pf_wrap button:first-child {
-        right: 3%;
-    }
-    .label .pf_wrap button:nth-child(2) {
-        left: 3%;
-    }
-    .label .pf_wrap .pfarea .pf_item li {
-        float: left;
-        width: 16%;
-        height: 100%;
-        position: relative;
-        font-size: .7rem;
-        opacity: .8;
-        margin-left: .5%;
-    }
-    .label .pf_wrap .pfarea .pf_item li .pf_item_wrap {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+    /* other2 Area */
+    .label .pf_wrap .pfarea .guide {
+        padding: 2rem 0;
     }
     .label .pf_wrap .pfarea .pf_item li .pf_preview {
-        margin: auto;
-        width: 8rem;
-        height: 8rem;
-        background-color: #000;
-        border-radius: 50%;   
-        opacity: .5;
+        width: 9.5rem;
+        height: 9.5rem;
     }
     .label .pf_wrap .pfarea .pf_item li .pf_preview a {
-        width: 8rem;
-        height: 8rem;
-        z-index: 99;
-        background-color: transparent;
-        border-radius: 50%;
+        width: 9.5rem;
+        height: 9.5rem;
     }
     .label .pf_wrap .pfarea .pf_item li p {
-        font-weight: bold;
         margin-top: 2rem;
     }
     .label .pf_wrap .pfarea .pf_item li.on .pf_item_wrap {
-        width: 100%;
-        height: auto;
-        position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_preview a {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw {
+        width: 100%;
+        bottom: 4%;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw li {
+        width: auto;
+        height: 1rem;
+        text-align: center;
     }
     .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
-        width: 9rem;
-        height: 9rem;
-        opacity: 1;
+        width: 11.5rem;
+        height: 11.5rem;
     }
-    .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
-        font-size: 1.2rem;
-    }
-  
+    /* label area */
 
+    .direct {
+        background-color: #1e1e1e;
+    }
+    .direct .area {
+        position: relative;
+    }
     .direct .area .direct_box {
         width: 45rem;
         height: auto;
@@ -1385,11 +1338,13 @@ ul {
     .direct .area .direct_box p {
         width: 45rem;
         height: auto;
-        font-size: 2.1rem;
+        font-size: 2.5rem;
         font-weight: bold;
         text-align: center;
     }
-
+    .direct .area .direct_box p span {
+        font-style: italic;
+    }
     .direct .area .direct_box .direct_wrapper {
         width: 100%; 
         height: auto; 
@@ -1421,8 +1376,8 @@ ul {
         font-size: .7rem;
     }
     .direct .area .direct_box .direct_wrapper > div > .direct_img {
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
         position: absolute;
         left: 50%; 
         transform: translateX(-50%);
@@ -1431,15 +1386,16 @@ ul {
         background-position: center center;
     }
     .light .direct .area .direct_box .direct_wrapper > div > .direct_img {
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
         position: absolute;
         left: 50%; 
         transform: translateX(-50%);
         margin-top: 5rem;
         background-repeat: no-repeat;
         background-position: center center;
-    } */
+    }
+
 }
 @media (min-width: 350px) and (max-width: 767px) {
     html, body {
