@@ -68,7 +68,7 @@ $('.base_wrap').hover(function(){
 
     $('.c_pa').circleProgress({
       value: 0.85,
-      size: 145,
+      size: 140,
       startAngle: -Math.PI /  4 * 2, 
       emptyFill: "rgba(102, 102, 102, .5)",
       fill: {
@@ -77,7 +77,7 @@ $('.base_wrap').hover(function(){
     });
     $('.c_h').circleProgress({
       value: 0.85,
-      size: 145,
+      size: 140,
       startAngle: -Math.PI /  4 * 2, 
       emptyFill: "rgba(102, 102, 102, .5)",
       fill: {
@@ -86,7 +86,7 @@ $('.base_wrap').hover(function(){
     });
     $('.c_c').circleProgress({
       value: 0.8,
-      size: 145,
+      size: 140,
       startAngle: -Math.PI /  4 * 2, 
       emptyFill: "rgba(102, 102, 102, .5)",
       fill: {
@@ -95,7 +95,7 @@ $('.base_wrap').hover(function(){
     });
     $('.c_js').circleProgress({
       value: 0.55,
-      size: 145,
+      size: 140,
       startAngle: -Math.PI /  4 * 2, 
       emptyFill: "rgba(102, 102, 102, .5)",
       fill: {
@@ -104,7 +104,7 @@ $('.base_wrap').hover(function(){
     });
     $('.c_jq').circleProgress({
       value: 0.7,
-      size: 145,
+      size: 140,
       startAngle: -Math.PI /  4 * 2, 
       emptyFill: "rgba(102, 102, 102, .5)",
       fill: {
@@ -113,7 +113,7 @@ $('.base_wrap').hover(function(){
     });
     $('.c_b').circleProgress({
       value: 0.75,
-      size: 145,
+      size: 140,
       startAngle: -Math.PI /  4 * 2,
       emptyFill: "rgba(102, 102, 102, .5)",
       fill: {
@@ -130,9 +130,6 @@ $('.base_wrap').hover(function(){
   $('.direct_wrapper > div > div').click(function(){
     $(this).siblings('.dr').css('opacity','1');
   });
-// $(function(){
-//     $("html, body").animate({ scrollTop: 0 }, "slow"); 
-// });
 
 var slide = $('.pf_item > li'),
   slidewrap = $('.pf_item');
@@ -144,7 +141,6 @@ var slideLength = $('.pf_item > li').length,
   num = 0;
 
 var current2 = $('.pf_item > li')[1];
-console.log(current2);
 
 
 $('.goingleft').click(function(){
@@ -176,10 +172,10 @@ $('.pf_item').animate({
 
 // 
 
-$('.swiper-slide').each(function(){
-var text = $(this).text();
-console.log(text);
-});
+// $('.swiper-slide').each(function(){
+// var text = $(this).text();
+// console.log(text);
+// });
 
 
 var typingBool = false; 

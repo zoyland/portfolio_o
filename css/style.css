@@ -16,7 +16,7 @@ html, body {
 }
 body {
     background: #eee;
-    font-size: 14px;
+    /* font-size: 14px; */
     color:#fff;
     margin: 0;
     padding: 0;
@@ -299,7 +299,7 @@ p.point {
     width: 100%;
     height: 100vh;
     text-align: center;
-    font-size: 18px;
+    /* font-size: 18px; */
     background: #1e1e1e;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -377,7 +377,7 @@ p.point {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 6rem;
     color: #ddd;
     font-weight: 700;
     margin: 1rem 0;
@@ -388,7 +388,7 @@ p.point {
     height: auto;
     display: none;
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 6rem;
     color: #ddd;
     font-weight: 700;
     margin: 1rem 0;
@@ -396,7 +396,7 @@ p.point {
 }
 .base .area .base_hover2 h1 {
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 6rem;
     color: #ddd;
     font-weight: 700;
     margin-top: 1rem;
@@ -406,12 +406,12 @@ p.point {
     color: #1e1e1e;
 }
 .base .area p {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #ddd;
 }
 .light .base .area p {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #1e1e1e;
 }
@@ -535,8 +535,8 @@ p.point {
     opacity: .6;
 }
 .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img:nth-child(2) {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     opacity: .6;
 }
 .other1 .area .other_wrap .other_wrap2 .keyword {
@@ -714,8 +714,8 @@ ul {
     position: relative;
 }
 .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -810,7 +810,7 @@ ul {
     border-radius: 50%;   
     opacity: .5;
 }
-.label .pf_wrap .pfarea .pf_item li .pf_preview:hover {
+.label .pf_wrap .pfarea .pf_item li a:hover {
     cursor: url(../image/lookinto.png), auto; 
 }
 .label .pf_wrap .pfarea .pf_item li .pf_preview {
@@ -824,6 +824,7 @@ ul {
 .label .pf_wrap .pfarea .pf_item .pf5 .pf_preview {background-image: url(../image/label/chanel.jpg);}
 
 .label .pf_wrap .pfarea .pf_item li .pf_preview a {
+    display: block;
     width: 11rem;
     height: 11rem;
     z-index: 99;
@@ -841,6 +842,14 @@ ul {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
+}
+.label .pf_wrap .pfarea .pf_item li.on .pf_preview a {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    z-index: 99;
+    background-color: transparent;
+    border-radius: 50%;
 }
 .label .pf_wrap .pfarea .pf_item li.on .pf_kw {
     display: block;
@@ -863,6 +872,13 @@ ul {
     margin: 0.3rem;
     text-align: center;
 }
+.label .pf_wrap .pfarea .pf_item li.on .pf_kw li a {
+    font-family: 'GmarketSansLight';
+    text-decoration: underline;
+}
+.label .pf_wrap .pfarea .pf_item li.on .pf_kw li p:last-child {
+    font-weight: bold;
+}
 .label .pf_wrap .pfarea .pf_item li.on .pf_kw li p:hover {
     font-weight: bold;
     background-color:rgba(63, 156, 214, .3);
@@ -871,9 +887,12 @@ ul {
     font-weight: bold;
     background-color:rgba(47, 99, 47, .3);
 }
+.label .pf_wrap .pfarea .pf_item li.on .pf_kw li p:last-child:hover {
+    background-color:rgba(255, 0, 0, .3);
+}
 .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
     opacity: 1;
 }
 .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
@@ -984,9 +1003,204 @@ ul {
 }
 
 
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    html, body {
+        font-size: 17px;
+    }
+    .wrapper img {
+        padding-top: 1rem;
+    }
+    /* Loading Area */
+    .left .tab {
+        font-size: 1.7rem;
+        bottom: 23%;
+        left: 5%;
+    }
+    .left .left_wrap .left_txt .appeal1 {
+        width: 200%;
+        top: 14%;
+        font-size: 1.5rem;
+    }
+    .left .left_wrap .left_txt .appeal2 {
+        width: 150%;
+        left: -25%;
+        bottom: 22%;
+        font-size: 1.5rem;
+    }
+    /* Base Area */
+
+    .other1 .area .other_wrap {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .other1 .area .other_wrap .other_wrap1 .profic > div {
+        width: 16rem;
+        height: 16rem;
+    }
+    .other1 .area .other_wrap .other_wrap1 .info ul li {
+        margin: .4rem 0;
+    }
+    .other1 .area .other_wrap .other_wrap1 .info ul li img {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    .other1 .area .other_wrap .other_wrap1 .info ul li p {
+        line-height: 2rem;
+        margin-left: 1rem;
+        font-size: .8rem;
+    }
+    .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing {
+        font-size: .9rem;
+    }
+    .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing li {
+        margin: .5rem 0;
+    }
+    .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap .typing li:nth-child(3) {
+        margin: .7rem 0;
+    }
+    .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .other1 .area .other_wrap .other_wrap2 .one_line .line_wrap img:nth-child(2) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .other1 .area .other_wrap .other_wrap2 .keyword {
+        font-size: .9rem;
+    }
+    /* other1 */
+
+    .other2 .area p {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    .other2 .area .other2_wrap .certi {
+        width: 30%;
+    }
+    .other2 .area .other2_wrap .certi .certi_wrap p {
+        font-size: 1rem;
+    }
+    .other2 .area .other2_wrap .abil {
+        width: 58%;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap {
+        width: 100%; 
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
+        width: 100%;
+        margin: 2% 0;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
+        width: 100%;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap1 > .c_wrap1_lo {
+        width: 95%;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo {
+        width: 95%;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div:nth-child(2) {
+        top: 55%;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress {
+        width: 7rem;
+        height: 7rem;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
+        width: 6rem;
+        height: 5rem;
+    }
+    /* other2 Area */
+    
+    .label .pf_wrap button {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .label .pf_wrap .pfarea .guide {
+        font-size: 1.3rem;
+    }
+    .label .pf_wrap .pfarea .pf_item {
+        width: 200%;
+        height: 80%;
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+    .label .pf_wrap .pfarea .pf_item li {
+        float: left;
+        width: 16%;
+        height: 100%;
+        position: relative;
+        font-size: .7rem;
+        opacity: .8;
+        margin-left: .5%;
+    }
+    .label .pf_wrap .pfarea .pf_item li .pf_item_wrap {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .label .pf_wrap .pfarea .pf_item li .pf_preview {
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li .pf_preview a {
+        display: block;
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li p {
+        margin-top: 2rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_preview a {
+        width: 13rem;
+        height: 13rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw {
+        width: 100%;
+        bottom: -1rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw li {
+        width: auto;
+        height: 1rem;
+        text-align: center;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
+        width: 13rem;
+        height: 13rem;
+        opacity: 1;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
+        font-size: 1.1rem;
+    }
+    /* label area */
+    
+    .direct .area .direct_box p {
+        font-size: 2rem;
+    }
+    .direct .area .direct_box .direct_wrapper > div > .direct_img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .light .direct .area .direct_box .direct_wrapper > div > .direct_img {
+        width: 3rem;
+        height: 3rem;
+    }
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+}
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    html, body {
+    /* html, body {
         font-size: 16px;
     }
     .left .left_wrap .left_txt .appeal1 {
@@ -1194,15 +1408,15 @@ ul {
         background-position: center center;
     }
     .light .direct .area .direct_box .direct_wrapper > div > .direct_img {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 3rem;
+        height: 3rem;
         position: absolute;
         left: 50%; 
         transform: translateX(-50%);
         margin-top: 5rem;
         background-repeat: no-repeat;
         background-position: center center;
-    }
+    } */
 }
 @media (min-width: 350px) and (max-width: 767px) {
     html, body {
