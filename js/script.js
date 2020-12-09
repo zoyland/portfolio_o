@@ -9,15 +9,6 @@ speed: 300,
 // horizontal scrolling 
 
 
-// $('.left .tab').mouseover(function(){
-//   $(this).prev('p').stop().animate({'left':'-19%'});
-// });
-// $('.left .tab').mouseleave(function(){
-//   $(this).prev('p').stop().animate({'left':'-30%'});
-// });
-// left tab hover 
-
-
 let toggler = document.querySelector(".toggler");
 let fullscreen = document.querySelector(".fullscreen");
 
@@ -54,7 +45,6 @@ $('.left .left_wrap .left_txt ul').mouseleave(function(){
     $('.left .left_wrap .left_txt p').stop().animate({'left':'-25%'});
 });
 // left menu hover 
-
 
 $('.base_wrap').hover(function(){
   $(this).find('.base_hover').css({'display':'none'});
@@ -124,7 +114,6 @@ $('.base_wrap').hover(function(){
       //   color: ["#3f9cd6"]
       // } 
     });
-
   // other2 - circle progress bar
 
   $('.direct_wrapper > div > div').click(function(){
@@ -169,14 +158,6 @@ $('.pf_item').animate({
   'left':'0%'
 },1000);
 }
-
-// 
-
-// $('.swiper-slide').each(function(){
-// var text = $(this).text();
-// console.log(text);
-// });
-
 
 var typingBool = false; 
 var typingIdx=0; 
