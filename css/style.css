@@ -1289,12 +1289,12 @@ ul {
         padding: 2rem 0;
     }
     .label .pf_wrap .pfarea .pf_item li .pf_preview {
-        width: 9.5rem;
-        height: 9.5rem;
+        width: 9rem;
+        height: 9rem;
     }
     .label .pf_wrap .pfarea .pf_item li .pf_preview a {
-        width: 9.5rem;
-        height: 9.5rem;
+        width: 9rem;
+        height: 9rem;
     }
     .label .pf_wrap .pfarea .pf_item li p {
         margin-top: 2rem;
@@ -1308,7 +1308,7 @@ ul {
     }
     .label .pf_wrap .pfarea .pf_item li.on .pf_kw {
         width: 100%;
-        bottom: 4%;
+        bottom: -3%;
     }
     .label .pf_wrap .pfarea .pf_item li.on .pf_kw li {
         width: auto;
@@ -1401,10 +1401,427 @@ ul {
     html, body {
         font-size: 12px;
     }
+    .toggler-container {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .toggler {
+        width: 80px;
+        height: 35px;
+    }
+    .circle {
+        height: 25px;
+        width: 25px;
+        left: 9%;
+    }
+    .circle.active {
+        height: 25px;
+        width: 25px;
+    }
+    .left {
+        background-color: transparent;
+    }
+    .left:hover {
+        opacity: .9;
+    }
+    .left .tab {
+        font-size: 1.7rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 5%;
+    }
+    .left .tab li {
+        margin: .4rem 0;
+    }
+    .left .tab:hover {
+        text-align: left; 
+    } 
     .left .left_wrap .left_txt .appeal1 {
         display: none;
     }
     .left .left_wrap .left_txt .appeal2 {
         display: none;
     }
+    .left .left_wrap .left_txt p {
+        opacity: .5;
+        color: #3f9cd6;
+    }
+
+    .base .cover > p {
+        font-size: .9rem;
+    }
+    .base .area .base_hover {
+        font-size: 5rem;
+    }
+    .base .area .base_hover2 {
+        font-size: 5rem;
+    }
+    .base .area .base_hover2 h1 {
+        font-size: 5rem;
+    }
+    .base .area .base_wrap:hover {
+        cursor: default;
+    }
+    /* Base Area */
+    
+    .other1 .area .other_wrap {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .other1 .area .other_wrap .other_wrap1 {
+        width: 100%;
+        height: 65%;
+    }
+    .other1 .area .other_wrap .other_wrap1 .profic {
+        width: 100%;
+        height: 40%;
+    }
+    .other1 .area .other_wrap .other_wrap1 .profic > div {
+        width: 13rem;
+        height: 13rem;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+    @media (min-width: 330px) and (max-width: 349px) {
+        .other1 .area .other_wrap .other_wrap1 .profic > div {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+    .other1 .area .other_wrap .other_wrap1 .info {
+        width: 100%;
+        height: 60%;
+    }
+    .other1 .area .other_wrap .other_wrap1 .info ul {
+        width: 95%;
+    }
+    .other1 .area .other_wrap .other_wrap1 .info ul li {
+        margin: .5rem 0;
+    }
+    .other1 .area .other_wrap .other_wrap2 {
+        width: 100%; 
+        height: 30%;
+    }
+    .other1 .area .other_wrap .other_wrap2 .one_line {
+        width: 100%;
+        height: 10%; 
+        display: none;
+    }
+    .other1 .area .other_wrap .other_wrap2 .keyword {
+        width: 100%;
+        height: 90%;
+    }
+    
+    .other2 .area p {
+        font-size: 1.4rem;
+    }
+    .other2 .area .other2_wrap {
+        width: 90%;
+        height: 80%;
+    }
+    .other2 .area .other2_wrap .certi {
+        width: 100%;
+        height: 15%; 
+        top: 0;
+        transform: translateY(0);
+    }
+    .other2 .area .other2_wrap .certi > p {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+    .other2 .area .other2_wrap .certi .certi_wrap {
+        width: 50%;
+        top: 0;
+        left: 50%;
+        transform: translate(0, 0);
+    }
+    .other2 .area .other2_wrap .certi .certi_wrap p {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+    }
+    .other2 .area .other2_wrap .abil {
+        width: 100%;
+        height: 80%; 
+        top: 0;
+        right: 0;
+        top: 20%;
+        transform: translateY(0);
+    }
+    .other2 .area .other2_wrap .abil p {
+        display: inline-block;
+        position: absolute;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap {
+        width: 180%; 
+        height: 75%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap {
+        width: 100%;
+        height: 100%;
+        margin: .5% 0;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        position: absolute; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap1 > .c_wrap1_lo {
+        width: 90%;
+        position: absolute;
+        left: 50%; 
+        top: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo {
+        width: 90%;
+        position: absolute;
+        left: 50%; 
+        top: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > .c_wrap2 > .c_wrap2_lo > div {
+        flex-grow: 1;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div:nth-child(2) {
+        top: 50%;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress {
+        width: 7rem;
+        height: 7rem;
+        float: left;
+        position: relative;
+    }
+    .other2 .area .other2_wrap .abil .circle_wrap .c_wrap > div > div > .progress .progress_img {
+        width: 6.5rem;
+        height: 6.5rem;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* other2 Area */
+    
+
+    /* label area */
+    .label .pf_wrap {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+    .label .pf_wrap button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .label .pf_wrap button:first-child {
+        top: 50%;
+        right: -5%;
+    }
+    .label .pf_wrap button:nth-child(2) {
+        top: 50%;
+        left: -5%;
+    }
+    .label .pf_wrap .pfarea {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        height: 80%;
+    }
+    .label .pf_wrap .pfarea .guide {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 4.5rem 0;
+    }
+    .label .pf_wrap .pfarea .pf_item {
+        width: 200%;
+        height: 80%;
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+    .label .pf_wrap .pfarea .pf_item li {
+        float: left;
+        width: 16%;
+        height: 100%;
+        position: relative;
+        font-size: .9rem;
+        opacity: .8;
+        margin-left: .5%;
+    }
+    .label .pf_wrap .pfarea .pf_item li .pf_item_wrap {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .label .pf_wrap .pfarea .pf_item li .pf_kw {
+        display: none;
+    }
+    .label .pf_wrap .pfarea .pf_item li .pf_preview {
+        margin: auto;
+        width: 8.5rem;
+        height: 8.5rem;
+        background-color: #000;
+        border-radius: 50%;   
+        opacity: .5;
+    }
+
+    .label .pf_wrap .pfarea .pf_item li .pf_preview a {
+        width: 9rem;
+        height: 9rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li p {
+        font-family: 'GmarketSansLight';
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_item_wrap {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_preview a {
+        display: block;
+        width: 10rem;
+        height: 10rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+        bottom: 15%;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw li {
+        width: auto;
+        height: 1rem;
+        text-align: center;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw li p {
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 400;
+        display: inline-block;
+        margin: 0.3rem;
+        text-align: center;
+        font-size: .9rem;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on .pf_kw li a {
+        font-family: 'GmarketSansLight';
+        text-decoration: underline;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > div {
+        width: 10rem;
+        height: 10rem;
+        opacity: 1;
+    }
+    .label .pf_wrap .pfarea .pf_item li.on > .pf_item_wrap > p {
+        font-size: 1.2rem;
+    }
+    /* label area */
+    
+
+    .direct .area {
+        position: relative;
+    }
+    .direct .area .direct_box {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .direct .area .direct_box p {
+        width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+        font-weight: bold;
+        text-align: center;
+    }
+    .direct .area .direct_box p span {
+        font-style: italic;
+    }
+    .direct .area .direct_box .direct_wrapper {
+        width: 100%; 
+        height: 90%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .direct .area .direct_box .direct_wrapper > div {
+        width: 100%;
+        height: 33.3%;
+        float: left;
+        position: relative;
+    }
+    .direct .area .direct_box .direct_wrapper > div > p {
+        opacity: 0;
+        transition: 1s;
+    }
+    .direct .area .direct_box .direct_wrapper > div h5 {
+        width: inherit;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 8rem;
+    }
+    .direct .area .direct_box .direct_wrapper > div p {
+        width: inherit;
+        display: inline;
+        font-size: 1rem;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .direct .area .direct_box .direct_wrapper > div > .dr2 {
+        font-weight: normal;
+        font-size: 1rem;
+        margin-top: 2.5rem;
+        display: none;
+    }
+    .direct .area .direct_box .direct_wrapper > div > .direct_img {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-top: 3rem;
+    }
+    .light .direct .area .direct_box .direct_wrapper > div > .direct_img {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-top: 3rem;
+    }
+
 }
